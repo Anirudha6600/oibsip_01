@@ -1,0 +1,271 @@
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ecf0f3;
+    display: flex;
+}
+.container{
+    width: 45%;
+    height: 45vh;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 10px #cbced1,
+    -12px 12px 10px #ffffff;
+    background-color:grey;
+}
+
+#screen{
+    width: 97%;
+    height:70px;
+    font-size: 35px;
+    text-align: right;
+    padding-right: .5em;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+}
+.buttons{  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px 32px;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+      "screen screen screen screen screen screen"
+      "clear factorial opening-bracket closing-bracket percentage AC"
+      "sin pi seven eight nine divide"
+      "cos log four five six multiply"
+      "tan root one two three substract"
+      "e x-power-y zero decimal equal add";
+   
+  }
+
+ .btn:hover{
+ box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.8),
+             inset -5px -5px  8px rgba(0, 0, 0, 0.8);
+}
+
+.special:hover{
+    box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.8),
+                inset -5px -5px  8px rgba(0, 0, 0, 0.8);
+   }
+
+   .btn{
+    border-radius: 5px;
+   }
+   .special{
+    border-radius: 5px;
+   }
+  
+  
+  #clear {
+    justify-self: center;
+    align-self: center;
+    grid-area: clear;
+    width: 75%;
+    height: 150%;
+    background-color: rgb(240, 255, 192);
+  }
+  
+  #factorial {
+    align-self: center;
+    grid-area: factorial;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #opening-bracket {
+    align-self: center;
+    grid-area: opening-bracket;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #closing-bracket {
+    align-self: center;
+    grid-area: closing-bracket;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #percentage {
+    align-self: center;
+    grid-area: percentage;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #AC {
+    align-self: center;
+    grid-area: AC;
+    width: 75%;
+    height: 150%;
+    background-color:dodgerblue;
+  }
+  
+  #sin {
+    align-self: center;
+    grid-area: sin;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #pi {
+    align-self: center;
+    grid-area: pi;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #seven {
+    align-self: center;
+    grid-area: seven;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #eight {
+    align-self: center;
+    grid-area: eight;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #nine {
+    align-self: center;
+    grid-area: nine;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #divide {
+    align-self: center;
+    grid-area: divide;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #cos {
+    align-self: center;
+    grid-area: cos;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #log {
+    align-self: center;
+    grid-area: log;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #four {
+    align-self: center;
+    grid-area: four;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #five {
+    align-self: center;
+    grid-area: five;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #six {
+    align-self: center;
+    grid-area: six;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #multiply {
+    align-self: center;
+    grid-area: multiply;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #tan {
+    align-self: center;
+    grid-area: tan;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #root {
+    align-self: center;
+    grid-area: root;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #one {
+    align-self: center;
+    grid-area: one;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #two {
+    align-self: center;
+    grid-area: two;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #three {
+    align-self: center;
+    grid-area: three;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #substract {
+    align-self: center;
+    grid-area: substract;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #e {
+    justify-self: center;
+    align-self: stretch;
+    grid-area: e;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #x-power-y {
+    grid-area: x-power-y;
+    width: 75%;
+    height: 150%;;
+  }
+  #decimal {
+    grid-area: decimal;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #zero {
+    grid-area: zero;
+    width: 75%;
+    height: 150%;
+  }
+  
+  #equal {
+    grid-area: equal;
+    width: 80%;
+    height: 160%;
+    background-color: rgb(71, 255, 30);
+  }
+  
+  #add {
+    grid-area: add;
+    width: 75%;
+    height: 150%;
+  }
